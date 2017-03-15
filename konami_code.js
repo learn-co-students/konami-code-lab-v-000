@@ -34,15 +34,17 @@ function init() {
           codePasses = false;
           }
         }
+      
       konamiDetector = [];
-      konamiIsDetected(codePasses)
+      if(codePasses) {
+        konamiIsDetected()
+      }
+
     }
   }
   attachEvent(document.body,"keydown",isKonamiKey);
 
   function konamiIsDetected(codePasses) {
-    if(codePasses) {
-      alert("Awesome!!")
-    }
+    alert("Awesome!!")
   }
 }

@@ -27,7 +27,7 @@ function init() {
         konamiDetector = [];
         konamiDetector.push(key);
       }
-    //if konami code is
+    //if konamiDetector length is at full length and can't be flasified, reset and pass
     } else if(konamiDetector.length === code.length) {
         for(var j = 0; j < konamiDetector.length; j++) {
           if(konamiDetector[j] !== code[j]) {
@@ -35,12 +35,14 @@ function init() {
           }
         }
       konamiDetector = [];
-      konamiIsDetected()
+      konamiIsDetected(codePasses)
     }
   }
   attachEvent(document.body,"keydown",isKonamiKey);
 
-  function konamiIsDetected() {
-    alert("Awesome!!")
+  function konamiIsDetected(codePasses) {
+    if(codePasses) {
+      alert("Awesome!!")
+    }
   }
 }

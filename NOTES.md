@@ -2,8 +2,6 @@ const code = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]
     *sequence: ↑,  ↑,  ↓,  ↓,  ←,  →,  ←,  →,  B,  A*
        *index: 0,  1,  2,  3,  4,  5,  6,  7,  8,  9*
 
-[up arrow, up arrow, down arrow, down arrow, left arrow, right arrow, left arrow, right arrow, B, A]
-
 
 KEYDOWN #1
 User presses up arrow (38)

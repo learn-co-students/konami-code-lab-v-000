@@ -9,6 +9,7 @@ function init() {
 
     if (key === code[index]) {
       index++
+      console.log(`Okay, okay. Index equals ${index}`)
 
       if (index === code.length - 1) {
         alert('Bravo!')
@@ -16,6 +17,7 @@ function init() {
       }
     } else {
       index = 0
+      console.log(`Oops. Index equals ${index}`)
     }
   }
 

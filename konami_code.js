@@ -4,14 +4,14 @@ const keys = []
 const body = document.querySelectorAll('body')
 
 body.addEventListener('keydown', function(e) {
-    // keys.push(e.keyCode)
+    // keys.push(e.key)
     // for (let i = 0; i < code.length; i++)
     //   if (keys[i] !== code[i]) {
     //     return "Sorry, try again"
     //   }
     i = 0
     while (i < code.length) {
-    if e.keyCode === code[i]
+    if e.key === code[i]
     i += 1
     }
     function init()

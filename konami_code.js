@@ -1,17 +1,19 @@
 const code = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]
-const keys = []
+var index = 0
 
 body.addEventListener('keydown', init);
-    // keys.push(e.key)
-    // for (let i = 0; i < code.length; i++)
-    //   if (keys[i] !== code[i]) {
-    //     return "Sorry, try again"
-    //   }
-function init() {
-    i = 0
-    while (i < code.length) {
-    if e.key === code[i]
-    i += 1
+
+function init (e) {
+  const key = parseInt(e.detail || e.which)
+
+  if (key === code[index]) {
+    index++
+
+    if (index === code.length - 1) {
+      alert('Success! - You have broken the Konami Code!')
+      index = 0
     }
-  alert('Success! - You have broken the Konami Code!')
+  } else {
+    index = 0
   }
+}

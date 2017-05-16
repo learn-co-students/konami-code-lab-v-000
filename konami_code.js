@@ -1,5 +1,24 @@
 const code = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]
+const keys = []
+
+const body = document.querySelectorAll('body')
+
+body.addEventListener('keydown', function(e) {
+    // keys.push(e.keyCode)
+    // for (let i = 0; i < code.length; i++)
+    //   if (keys[i] !== code[i]) {
+    //     return "Sorry, try again"
+    //   }
+    i = 0
+    while (i < code.length) {
+    if e.keyCode === code[i]
+    i += 1
+    }
+    function init()
+  }
+  return "Sorry - Try again."
+}
 
 function init() {
-  // your code here
+  alert('Success! - You have broken the Konami Code!')
 }

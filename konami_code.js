@@ -1,7 +1,20 @@
 const code = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]
 
-function init(e) {
-  const key = parseInt(e.detail || e.which)
+var index = 0
 
-  if (key === code)
+function init() {
+  document.addEventListener('keydown', function(e) {
+    if (parseInt(e.detail || e.which) === code[index]){
+      index++
+
+      if (index === code.length - 1){
+        alert('congrat!')
+        index = 0
+      }
+    } else {
+      index = 0
+    }
+  })
 }
+
+init()

@@ -10,7 +10,7 @@ function init() {
 			index++;
 
 			if (index === code.length - 1) {
-				window.alert('YES!!!');
+				alert('YES!!!');
 				index = 0;
 			}
 		} else {

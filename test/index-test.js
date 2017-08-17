@@ -29,7 +29,7 @@ describe('index', () => {
         triggerKeyDown(code[i])
       }
 
-      expect(window.alert).toHaveBeenCalled()
+      expect(window.alert).toNotHaveBeenCalled()
     })
 
     it('does not trigger an alert if the wrong code is entered', () => {

@@ -24,11 +24,11 @@ describe('index', () => {
       init()
 
       window.alert = expect.createSpy()
-
+      // console.log("hello")
       for (let i = 0, l = code.length; i < l; i++) {
         triggerKeyDown(code[i])
       }
-
+      // console.log(document.body)
       expect(window.alert).toHaveBeenCalled()
     })
 
